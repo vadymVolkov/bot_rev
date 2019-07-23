@@ -54,7 +54,11 @@ class WebhookServer(object):
 
 @bot.message_handler(commands=['start'])
 def handle_text(message):
-    keyboard.test(message)
+    keyboard.start(message)
+
+@bot.message_handler(commands=['reg'])
+def handle_text(message):
+    keyboard.start(message)
 
 
 # Remove webhook, it fails sometimes the set if there is a previous webhook
