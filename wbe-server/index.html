@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<div id="form-rev">
+    <form method="post" action="generate">
+        <div class="form-group">
+            <label for="email">Ваш электронный адресс</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="text">Ваш отзыв</label>
+            <textarea class="form-control" id="text" rows="3" name="text"></textarea>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</div>
+</body>
+</html>
