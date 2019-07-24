@@ -13,4 +13,8 @@ def send_message(email, phone, text):
         url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
         data={'chat_id': 248329110, 'text': message}
     ).json()
+    response2 = requests.post(
+        url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
+        data={'chat_id': 244066343, 'text': message}
+    ).json()
     return response

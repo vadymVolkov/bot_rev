@@ -58,7 +58,7 @@ def handle_text(message):
 
 @bot.message_handler(commands=['reg'])
 def handle_text(message):
-    keyboard.start(message)
+    keyboard.reg(message)
 
 
 # Remove webhook, it fails sometimes the set if there is a previous webhook
